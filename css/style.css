@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+:root{
+    --Clr-greenyellow: #008000;
+    --Clr-Black:#000000;
+    --Clr-Violeta:  #8a2be2;
+    --Clr-white: #f5f5dc; 
+    --Clr-red: rgb(114, 18, 18);
+    --clr-Blue: rgb(70, 70, 187);
+    --Clr-Aqua:rgb(32, 172, 172);
+}
+body{
+    background-color: var(--Clr-Black);
+    color: var(--Clr-Aqua)
+    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--clr-Blue);
+    color: var(--Clr-Black);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    border-bottom: 4px solid var(--Clr-white);
+}
+main{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 2rem;
+text-align: center;
+font-weight: 600;
+}
+
+.instrucciones{
+    margin-bottom: 2rem;
+
+}
+.marcador{
+    display: flex;
+    background-color: var(--clr-Blue);
+    border: 2px solid;
+    color:#f5f5dc;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    position: relative;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.marcador .nombre {
+    position: absolute;
+    color: #ffff;
+    line-height: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid ;
+    background-color: #8a2be2;
+
+}
+.marcador .nombre-jugador{
+    right: 85%;
+}
+.marcador .nombre-computadora{
+    left: 85%;
+}
+
+.marcador .puntos{
+    font-size: 1.6rem;
+}
+.elegi-tu-arma{
+    font-size:1rem;
+    color:#008000;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.armas{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.arma{
+font-size: 3rem;
+
+background-color: var(--Clr-white);
+border-radius: 5rem;
+cursor: pointer;
+padding: 1rem;
+margin-top: 2rem;
+}
+.mensaje{
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.mensaje .eleccion{
+    color: #000000;
+    background-color: #f5f5dc;
+    border-radius: .25rem;
+    padding-inline: .25rem;
+
+}
+.btn{
+    border: 0;
+    line-height: 1;
+    background-color:#8a2be2;
+    color: var(--Clr-white);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.disabled{
+    display: none;
+}
